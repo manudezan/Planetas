@@ -3,3 +3,12 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
 }
+
+.planeta{
+    background-color: transparent;
+    font-size: 26px;
+    border: 0px;
+}
+.planeta:focus{
+    outline: none;
+}
