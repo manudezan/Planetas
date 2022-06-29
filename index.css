@@ -10,3 +10,11 @@ body{
     margin: 0;
 }
 
+.planeta{
+    background-color: transparent;
+    font-size: 26px;
+    border: 0px;
+}
+.planeta:focus{
+    outline: none;
+}
