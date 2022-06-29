@@ -29,7 +29,7 @@ function cambios() {
       resultado.innerHTML = ((peso / 9.81) * 3.711).toFixed(2) + " kg marteanos";
       Object.assign(body.style, {
       backgroundImage: "linear-gradient(to left top, #8f250c, #922a0a, #953008, #983505, #9b3a03, #a44507, #ae4f0d, #b75a13, #c96d21, #db812e, #ed953c, #ffa94a)",
-    });
+      });    
       break;
 
     case "saturno":
@@ -64,3 +64,7 @@ function cambios() {
         resultado.innerHTML = "Seleccione un planeta";
   }
 };
+ 
+// function bordes (color) {
+
+// }

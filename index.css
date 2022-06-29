@@ -8,17 +8,19 @@ html{
 }
 
 body{
+    background-image: linear-gradient(to left top, #145d90, #006589, #006a77, #006d60, #2f6d48, #407040, #507239, #617332, #637b33, #658333, #668c35, #679436);
     background-repeat: no-repeat;
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
+    color: #fff;
 }
 
 .box{
     background-color: #0000006e;
     box-sizing: border-box;
-    border: 5px solid #000;
-    width: 550px;
-    height: 550px;
+    border: 5px solid rgb(109, 59, 40);
+    width: 800px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +31,7 @@ body{
     background-color: transparent;
     font-size: 26px;
     border: 0px;
+    color: #fff;
 }
 .planeta:focus{
     outline: none;
