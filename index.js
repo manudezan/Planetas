@@ -1,21 +1,30 @@
 const button = document.getElementById("button");
 const body =  document.getElementById("body");
 const planeta = document.getElementById("planeta");
+const fondosSegunPlaneta = {
+    mercurio: "linear-gradient(to left top, #b08968, #b48e66, #b89265, #bb9863, #bd9d62, #c19f67, #c6a26d, #caa472, #cfa480, #d0a68e, #cea99b, #c9ada7)",
+    
+  }
 
 planeta.addEventListener("change", cambios) 
 button.addEventListener("click", cambios)
+
+function asignarFondo (planeta){
+  Object.assign(body.style, {
+    backgroundImage: fondosSegunPlaneta.planeta
+  });
+}
 
 function cambios() {
   const peso = document.getElementById("peso").value;
   const resultado = document.getElementById("resultado");
   const planeta = document.getElementById("planeta").value;
 
+
   switch (planeta) {
     case "mercurio":
       resultado.innerHTML = ((peso / 9.81) * 3.7).toFixed(2) + " kg mercurianos";
-      Object.assign(body.style, {
-        backgroundImage: "linear-gradient(to left top, #b08968, #b48e66, #b89265, #bb9863, #bd9d62, #c19f67, #c6a26d, #caa472, #cfa480, #d0a68e, #cea99b, #c9ada7)",
-      });
+      asignarFondo(planeta);
         break;
 
     case "venus":
@@ -26,7 +35,7 @@ function cambios() {
       break;
    
     case "marte":
-      resultado.innerHTML = ((peso / 9.81) * 3.711).toFixed(2) + " kg marteanos";
+      resultado.innerHTML = ((peso / 9.81) * 3.711).toFixed(2) + " kg marcianos";
       Object.assign(body.style, {
       backgroundImage: "linear-gradient(to left top, #8f250c, #922a0a, #953008, #983505, #9b3a03, #a44507, #ae4f0d, #b75a13, #c96d21, #db812e, #ed953c, #ffa94a)",
       });    
@@ -68,3 +77,4 @@ function cambios() {
 // function bordes (color) {
 
 // }
+
